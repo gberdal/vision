@@ -9,7 +9,7 @@ source vision_env/bin/activate
 cd vision
 pip install -r requirements.txt
 ```
-Put your images into the directory /images and start the application with
+Put your images into the directory `/images` and start the application with
 ```bash
 python start.py
 ```
@@ -30,4 +30,18 @@ set the variable again.
 ```
 export GOOGLE_APPLICATION_CREDENTIALS="[PATH]"
 ```
+
+### Explanation about the results
+Generally seems more detailed and feature rich than other hosted image processing solutions out there.
+Google Vision utilizes Google's vast knowledge about landmarks and their geospatial properties. The safe search detection
+on the other hand is not the strongest of capabilities of Google Vision. It does not provide detailed enough information 
+about the results nor it is configurable to a great degree.
+
+#### Pros
+- Landmark detection
+- Good label detection
+
+#### Cons
+- Safe Search is lacking configurability and details on results
+- No face recognition. It can only find faces on images and perform basic analysis.
 
