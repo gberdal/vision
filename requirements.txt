@@ -1,0 +1,4 @@
+google-cloud-vision
+matplotlib
+numpy
+scikit-image
